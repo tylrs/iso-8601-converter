@@ -13,7 +13,7 @@
     display: grid;
     grid-template-rows: 2 1fr;
     height: 90vh;
-    /* margin-top: 2rem; */
+    margin-top: 1rem;
 }
 
 .input-section {
@@ -27,4 +27,16 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+
+.input-label {
+    font-size: 2rem;
+}
+
+.timestamp-input {
+    font-size: 1.5rem;
+    height: 30%;
+    margin-top: 2rem;
+    width: 60%;
+    text-align: center;
 }

@@ -34,8 +34,8 @@ function App() {
       </header>
       <section className='converter-container'>
         <section className='input-section'>
-          <label htmlFor='timestamp'>Enter Timestamp</label>
-          <input type='text' id='timestamp' value={timestamp} onChange={(e) => handleChange(e)}></input>
+          <label className='input-label' htmlFor='timestamp'>Enter Timestamp</label>
+          <input className='timestamp-input' type='text' id='timestamp' value={timestamp} onChange={(e) => handleChange(e)}></input>
         </section>
         {converted && 
           <section className='output-section'>
