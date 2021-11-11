@@ -37,6 +37,12 @@ function App() {
           <label htmlFor='timestamp'>Enter Timestamp</label>
           <input type='text' id='timestamp' value={timestamp} onChange={(e) => handleChange(e)}></input>
         </section>
+        {converted && 
+          <section className='output-section'>
+            <h2>Denver</h2>
+            <p>{converted}</p>
+          </section>
+        }
       </section>
     </main>
   );
