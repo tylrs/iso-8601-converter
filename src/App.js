@@ -40,7 +40,9 @@ function App() {
         {converted && 
           <section className='output-section'>
             <h2 className='timezone-title'>Denver</h2>
-            <p className='converted-timestamp'>{converted}</p>
+            <div className='converted-wrapper'>
+              <p className='converted-timestamp'>{converted}</p>
+            </div>
           </section>
         }
       </section>
