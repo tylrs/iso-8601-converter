@@ -47,6 +47,12 @@
     font-weight: normal;
 }
 
-.converted-timestamp {
-    margin-top: 1rem;
+.converted-wrapper {
+    align-items: center;
+    border: 1px solid black;
+    display: flex;
+    height: 40%;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 60%;
 }
