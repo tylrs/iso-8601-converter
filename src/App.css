@@ -56,3 +56,7 @@
     margin-top: 2rem;
     width: 60%;
 }
+
+.converted-timestamp {
+    font-size: 1.2rem;
+}
