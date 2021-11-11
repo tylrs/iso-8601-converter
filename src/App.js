@@ -10,11 +10,9 @@ function App() {
   }
 
   useEffect(() => {
-    console.log('changing')
     if (timestamp.length >= 20) {
       let date = new Date(timestamp);
       const options = {
-        weekday: 'long',
         year: 'numeric',
         month: 'long',
         day: 'numeric',
@@ -39,7 +37,7 @@ function App() {
         </section>
         {converted && 
           <section className='output-section'>
-            <h2 className='timezone-title'>Denver</h2>
+            <h2 className='timezone-title'>Denver (UTC-7:00)</h2>
             <div className='converted-wrapper'>
               <p className='converted-timestamp'>{converted}</p>
             </div>
