@@ -39,8 +39,8 @@ function App() {
         </section>
         {converted && 
           <section className='output-section'>
-            <h2>Denver</h2>
-            <p>{converted}</p>
+            <h2 className='timezone-title'>Denver</h2>
+            <p className='converted-timestamp'>{converted}</p>
           </section>
         }
       </section>
