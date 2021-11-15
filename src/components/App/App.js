@@ -1,5 +1,6 @@
 import './App.css';
 import {useState, useEffect} from 'react';
+import TimeZoneForm from '../TimeZoneForm/TimeZoneForm';
 
 const App = () => {
   const [timestamp, setTimestamp] = useState('')
@@ -19,7 +20,7 @@ const App = () => {
         hour: '2-digit',
         minute: '2-digit',
         second: '2-digit',
-        timeZone: 'America/Denver',
+        timeZone: 'AE',
       };
       setConverted(date.toLocaleString('en-US', options))
     }
@@ -33,6 +34,7 @@ const App = () => {
       <section className='converter-container'>
         <section className='input-section'>
           <label className='input-label' htmlFor='timestamp'>Enter Timestamp</label>
+          <TimeZoneForm />
           <input className='timestamp-input' type='text' id='timestamp' value={timestamp} onChange={(e) => handleChange(e)}></input>
         </section>
         {converted && 
