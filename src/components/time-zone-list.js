@@ -1,4 +1,6 @@
-[
+import React from 'react';
+
+const timezones = [
     'Asia/Dubai',
     'Asia/Kabul',
     'America/Antigua',
@@ -423,3 +425,7 @@
     'Africa/Lusaka',
     'Africa/Harare'
 ]
+
+const convertedTimeZones = timezones.map(zone => <option value={`${zone}`}>{zone}</option>)
+
+export default convertedTimeZones
