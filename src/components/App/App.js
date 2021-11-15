@@ -1,7 +1,7 @@
 import './App.css';
 import {useState, useEffect} from 'react';
 
-function App() {
+const App = () => {
   const [timestamp, setTimestamp] = useState('')
   const [converted, setConverted] = useState('')
 
