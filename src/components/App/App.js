@@ -5,6 +5,7 @@ import TimeZoneForm from '../TimeZoneForm/TimeZoneForm';
 const App = () => {
   const [timestamp, setTimestamp] = useState('')
   const [converted, setConverted] = useState('')
+  const [city, setCity] = useState('America/Denver')
 
   const handleChange = (e) => {
     setTimestamp(e.target.value)
@@ -20,11 +21,11 @@ const App = () => {
         hour: '2-digit',
         minute: '2-digit',
         second: '2-digit',
-        timeZone: 'AE',
+        timeZone: `${city}`,
       };
       setConverted(date.toLocaleString('en-US', options))
     }
-  }, [timestamp])
+  }, [timestamp, city])
 
   return (
     <main>
