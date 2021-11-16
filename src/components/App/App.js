@@ -35,12 +35,12 @@ const App = () => {
       <section className='converter-container'>
         <section className='input-section'>
           <label className='input-label' htmlFor='timestamp'>Enter Timestamp</label>
-          <TimeZoneForm setCity={setCity}/>
+          <TimeZoneForm setCity={setCity} city={city}/>
           <input className='timestamp-input' type='text' id='timestamp' value={timestamp} onChange={(e) => handleChange(e)}></input>
         </section>
         {converted && 
           <section className='output-section'>
-            <h2 className='timezone-title'>Denver (UTC-7:00)</h2>
+            <h2 className='timezone-title'>{city}</h2>
             <div className='converted-wrapper'>
               <p className='converted-timestamp'>{converted}</p>
             </div>
