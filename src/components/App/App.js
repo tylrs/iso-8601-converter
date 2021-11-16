@@ -36,7 +36,14 @@ const App = () => {
         <section className='input-section'>
           <label className='input-label' htmlFor='timestamp'>Enter Timestamp</label>
           <TimeZoneForm setCity={setCity} city={city}/>
-          <input className='timestamp-input' type='text' id='timestamp' value={timestamp} onChange={(e) => handleChange(e)}/>
+          <input 
+            className='timestamp-input' 
+            type='text' 
+            id='timestamp' 
+            value={timestamp} 
+            onChange={(e) => handleChange(e)}
+            placeholder='ex: yyyy-mm-ddThh:mm:ssz'
+          />
         </section>
         {converted && 
           <section className='output-section'>
