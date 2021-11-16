@@ -7,7 +7,7 @@ const TimeZoneForm = () => {
 
     return (
         <form>
-            <label for='changeTimezone'>Choose Time zone to Convert to</label>
+            <label for='changeTimezone'>Choose Destination Time Zone:</label>
             <select name='changeTimezone' id='changeTimezone'>
                 {convertedTimeZones}
             </select>
