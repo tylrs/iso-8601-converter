@@ -67,3 +67,8 @@ main {
 .converted-timestamp {
     font-size: 1.2rem;
 }
+
+.diff-title {
+    font-size: 2rem;
+    font-weight: normal;
+}
