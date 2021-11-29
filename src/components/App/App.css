@@ -23,8 +23,9 @@ main {
 
 .converter-section {
     align-items: center;
-    border-bottom: 2px solid black;
     display: flex;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
     flex-direction: column;
 }
 
@@ -83,4 +84,8 @@ main {
 
 .diff-inputs {
     display: flex;
+}
+
+.diff-inputs > * {
+    text-align: center;
 }
