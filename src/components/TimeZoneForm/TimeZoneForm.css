@@ -3,3 +3,8 @@
     flex-direction: column;
     margin-top: .5rem;
 }
+
+.change-timezone {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}

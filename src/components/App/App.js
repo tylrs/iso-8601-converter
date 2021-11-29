@@ -63,7 +63,7 @@ const App = () => {
             <div>
               <label className='diff-label-1' htmlFor='timestamp'>Enter Timestamp 1</label>
               <input 
-                className='timestamp-input-1' 
+                className='diff-input-field' 
                 type='text' 
                 id='timestamp' 
                 value={diffTimestamp1} 
@@ -74,7 +74,7 @@ const App = () => {
             <div>
               <label className='diff-label-2' htmlFor='timestamp'>Enter Timestamp 2</label>
               <input 
-                className='timestamp-input-2' 
+                className='diff-input-field' 
                 type='text' 
                 id='timestamp' 
                 value={diffTimestamp2} 
