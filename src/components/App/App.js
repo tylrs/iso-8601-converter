@@ -6,7 +6,7 @@ const App = () => {
   const [timestamp, setTimestamp] = useState('')
   const [diffTimestamp1, setDiffTimestamp1] = useState('')
   const [diffTimestamp2, setDiffTimestamp2] = useState('')
-  const [timestampDiff, setTimestampDiff] = useState('')
+  const [timestampDiff, setTimestampDiff] = useState('hmm')
   const [converted, setConverted] = useState('')
   const [city, setCity] = useState('America/Denver')
 
@@ -60,27 +60,27 @@ const App = () => {
           <h2 className='diff-title'>Calculate Difference</h2>
           <label className='diff-label-1' htmlFor='timestamp'>Enter Timestamp</label>
           <input 
-            className='timestamp-input-1' 
+            className='timestamp-input' 
             type='text' 
             id='timestamp' 
             value={diffTimestamp1} 
-            onChange={(e) => handleChange(e)}
+            // onChange={(e) => handleChange(e)}
             placeholder='ex: yyyy-mm-ddThh:mm:ssz'
           />
           <label className='diff-label-2' htmlFor='timestamp'>Enter Timestamp</label>
           <input 
-            className='timestamp-input-2' 
+            className='timestamp-input' 
             type='text' 
             id='timestamp' 
             value={diffTimestamp2} 
-            onChange={(e) => handleChange(e)}
+            // onChange={(e) => handleChange(e)}
             placeholder='ex: yyyy-mm-ddThh:mm:ssz'
           />
         {timestampDiff && 
           <section className='diff-output-section'>
             <h2 className='timezone-title'>Not sure</h2>
-            <div className='diff-wrapper'>
-              <p className='diff-timestamp'>{timestampDiff}</p>
+            <div className='converted-wrapper'>
+              <p className='converted-timestamp'>{timestampDiff}</p>
             </div>
           </section>
         }
