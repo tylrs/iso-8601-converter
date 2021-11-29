@@ -57,6 +57,7 @@ const App = () => {
         }
         </section>
         <section className='diff-section'>
+          <h2>Calculate Difference</h2>
           <label className='diff-label-1' htmlFor='timestamp'>Enter Timestamp</label>
           <input 
             className='timestamp-input-1' 
