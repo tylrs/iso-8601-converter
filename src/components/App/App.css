@@ -34,7 +34,6 @@ main {
     flex-direction: column;
     height: 30rem;
     margin-top: 2rem;
-    width: 46rem;
 }
 
 .input-label {
@@ -45,7 +44,6 @@ main {
     font-size: 1.5rem;
     height: 30%;
     margin-top: 2rem;
-    width: 60%;
     text-align: center;
 }
 
@@ -61,7 +59,6 @@ main {
     height: 40%;
     justify-content: center;
     margin-top: 2rem;
-    width: 60%;
 }
 
 .converted-timestamp {

@@ -1,7 +1,5 @@
-#changeTimezone {
-    margin-left: .5rem;
-}
-
 .timezone-form {
+    display: flex;
+    flex-direction: column;
     margin-top: .5rem;
 }
