@@ -58,24 +58,30 @@ const App = () => {
         </section>
         <section className='diff-section'>
           <h2 className='diff-title'>Calculate Difference</h2>
-          <label className='diff-label-1' htmlFor='timestamp'>Enter Timestamp</label>
-          <input 
-            className='timestamp-input' 
-            type='text' 
-            id='timestamp' 
-            value={diffTimestamp1} 
-            // onChange={(e) => handleChange(e)}
-            placeholder='ex: yyyy-mm-ddThh:mm:ssz'
-          />
-          <label className='diff-label-2' htmlFor='timestamp'>Enter Timestamp</label>
-          <input 
-            className='timestamp-input' 
-            type='text' 
-            id='timestamp' 
-            value={diffTimestamp2} 
-            // onChange={(e) => handleChange(e)}
-            placeholder='ex: yyyy-mm-ddThh:mm:ssz'
-          />
+          <div className='diff-inputs'>
+            <div>
+              <label className='diff-label-1' htmlFor='timestamp'>Enter Timestamp</label>
+              <input 
+                className='timestamp-input-1' 
+                type='text' 
+                id='timestamp' 
+                value={diffTimestamp1} 
+                // onChange={(e) => handleChange(e)}
+                placeholder='ex: yyyy-mm-ddThh:mm:ssz'
+              />
+            </div>
+            <div>
+              <label className='diff-label-2' htmlFor='timestamp'>Enter Timestamp</label>
+              <input 
+                className='timestamp-input-2' 
+                type='text' 
+                id='timestamp' 
+                value={diffTimestamp2} 
+                // onChange={(e) => handleChange(e)}
+                placeholder='ex: yyyy-mm-ddThh:mm:ssz'
+              />
+            </div>
+          </div>
         {timestampDiff && 
           <section className='diff-output-section'>
             <h2 className='timezone-title'>Not sure</h2>
