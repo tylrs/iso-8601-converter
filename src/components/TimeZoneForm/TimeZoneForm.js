@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './TimeZoneForm.css';
 import convertedTimeZones from '../time-zone-list';
 
