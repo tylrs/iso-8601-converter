@@ -84,8 +84,14 @@ main {
 
 .diff-inputs {
     display: flex;
+    margin-top: .5rem;
 }
 
 .diff-inputs > * {
     text-align: center;
+}
+
+.diff-input-field {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
