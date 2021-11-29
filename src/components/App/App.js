@@ -33,7 +33,7 @@ const App = () => {
         <h1 className='page-title'>ISO 8601 Converter</h1>
       </header>
       <section className='converter-container'>
-        <section className='input-section'>
+        <section className='converter-section'>
           <label className='input-label' htmlFor='timestamp'>Enter Timestamp</label>
           <TimeZoneForm setCity={setCity} city={city}/>
           <input 
@@ -44,7 +44,6 @@ const App = () => {
             onChange={(e) => handleChange(e)}
             placeholder='ex: yyyy-mm-ddThh:mm:ssz'
           />
-        </section>
         {converted && 
           <section className='output-section'>
             <h2 className='timezone-title'>{city}</h2>
@@ -53,6 +52,7 @@ const App = () => {
             </div>
           </section>
         }
+        </section>
       </section>
     </main>
   );
