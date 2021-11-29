@@ -16,7 +16,7 @@ main {
 
 .converter-container {
     display: grid;
-    grid-template-rows: 2 1fr;
+    grid-template-columns: 1fr 1fr;
     height: 90vh;
     margin-top: 1rem;
 }
