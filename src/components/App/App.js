@@ -37,8 +37,9 @@ const App = () => {
       </header>
       <section className='converter-container'>
         <section className='converter-section'>
-          <label className='input-label' htmlFor='timestamp'>Enter Timestamp</label>
+          <h2 className='converter-header'>Convert Timezone</h2>
           <TimeZoneForm setCity={setCity} city={city}/>
+          <label className='input-label' htmlFor='timestamp'>Enter Timestamp</label>
           <input 
             className='timestamp-input' 
             type='text' 

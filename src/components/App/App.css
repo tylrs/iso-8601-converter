@@ -37,7 +37,12 @@ main {
 }
 
 .input-label {
+    /* font-size: 2rem; */
+}
+
+.converter-header {
     font-size: 2rem;
+    font-weight: normal;
 }
 
 .timestamp-input {
