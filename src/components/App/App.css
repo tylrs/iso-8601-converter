@@ -78,3 +78,7 @@ main {
     display: flex;
     flex-direction: column;
 }
+
+.diff-inputs {
+    display: flex;
+}
