@@ -50,7 +50,7 @@ const App = () => {
           />
         {converted && 
           <section className='output-section'>
-            <h2 className='timezone-title'>{city}</h2>
+            <h2 className='timezone-title'>{city}:</h2>
             <div className='converted-wrapper'>
               <p className='converted-timestamp'>{converted}</p>
             </div>
