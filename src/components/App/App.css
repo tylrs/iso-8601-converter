@@ -37,7 +37,7 @@ main {
 }
 
 .input-label {
-    /* font-size: 2rem; */
+    text-decoration: underline;
 }
 
 .converter-header {
@@ -120,4 +120,8 @@ main {
 
 .diff-timestamp {
     font-size: 1.2rem;
+}
+
+.diff-label {
+    text-decoration: underline;
 }
