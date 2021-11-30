@@ -3,20 +3,21 @@ import {useState, useEffect} from 'react';
 import TimeZoneForm from '../TimeZoneForm/TimeZoneForm';
 
 const App = () => {
-  const [timestamp, setTimestamp] = useState('')
-  const [diffTimestamp1, setDiffTimestamp1] = useState('')
-  const [diffTimestamp2, setDiffTimestamp2] = useState('')
+  const [timestamp, setTimestamp] = useState({convertStamp: '', diffStamp1: '', diffStamp2: '' })
   const [timestampDiff, setTimestampDiff] = useState('hmm')
   const [converted, setConverted] = useState('')
   const [city, setCity] = useState('America/Denver')
 
   const handleChange = (e) => {
-    setTimestamp(e.target.value)
+    setTimestamp(prevState => ({
+      ...prevState,
+      [e.target.name]: e.target.value
+    }))
   }
 
   useEffect(() => {
-    if (timestamp.length >= 20) {
-      let date = new Date(timestamp);
+    if (timestamp.convertStamp.length >= 20) {
+      let date = new Date(timestamp.convertStamp);
       const options = {
         year: 'numeric',
         month: 'long',
@@ -28,7 +29,7 @@ const App = () => {
       };
       setConverted(date.toLocaleString('en-US', options))
     }
-  }, [timestamp, city])
+  }, [timestamp.convertStamp, city])
 
   return (
     <main>
@@ -44,7 +45,8 @@ const App = () => {
             className='timestamp-input' 
             type='text' 
             id='timestamp' 
-            value={timestamp} 
+            name= 'convertStamp'
+            value={timestamp.convertStamp} 
             onChange={(e) => handleChange(e)}
             placeholder='ex: yyyy-mm-ddThh:mm:ssz'
           />
@@ -65,9 +67,10 @@ const App = () => {
               <input 
                 className='diff-input-field' 
                 type='text' 
-                id='timestamp' 
-                value={diffTimestamp1} 
-                // onChange={(e) => handleChange(e)}
+                id='timestamp'
+                name='diffStamp1' 
+                value={timestamp.diffStamp1} 
+                onChange={(e) => handleChange(e)}
                 placeholder='ex: yyyy-mm-ddThh:mm:ssz'
               />
             </div>
@@ -77,8 +80,9 @@ const App = () => {
                 className='diff-input-field' 
                 type='text' 
                 id='timestamp' 
-                value={diffTimestamp2} 
-                // onChange={(e) => handleChange(e)}
+                name='diffStamp2'
+                value={timestamp.diffStamp2} 
+                onChange={(e) => handleChange(e)}
                 placeholder='ex: yyyy-mm-ddThh:mm:ssz'
               />
             </div>
