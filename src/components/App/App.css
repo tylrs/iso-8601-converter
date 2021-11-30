@@ -93,6 +93,7 @@ main {
 }
 
 .diff-input-field {
+    font-size: 1rem;
     height: 10rem;
     width: 83%;
     margin-bottom: .5rem;
