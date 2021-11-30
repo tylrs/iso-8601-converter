@@ -86,8 +86,8 @@ const App = () => {
         {timestampDiff && 
           <section className='diff-output-section'>
             <h2 className='timezone-title'>Difference:</h2>
-            <div className='converted-wrapper'>
-              <p className='converted-timestamp'>{timestampDiff}</p>
+            <div className='diff-wrapper'>
+              <p className='diff-timestamp'>{timestampDiff}</p>
             </div>
           </section>
         }
