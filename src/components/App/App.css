@@ -50,6 +50,7 @@ main {
     height: 30%;
     margin-top: .5rem;
     text-align: center;
+    width: 50%;
 }
 
 .timezone-title {
@@ -65,6 +66,7 @@ main {
     height: 40%;
     justify-content: center;
     margin-top: 2rem;
+    width: 120%;
 }
 
 .converted-timestamp {
@@ -105,4 +107,17 @@ main {
     height: 70%;
     margin-top: 2rem;
     width: 80%;
+}
+
+.diff-wrapper {
+    align-items: center;
+    border: 1px solid black;
+    display: flex;
+    height: 40%;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.diff-timestamp {
+    font-size: 1.2rem;
 }
