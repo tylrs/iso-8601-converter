@@ -1,6 +1,7 @@
 import './App.css';
 import {useState, useEffect} from 'react';
 import TimeZoneForm from '../TimeZoneForm/TimeZoneForm';
+import { calculateDiff } from '../../utils';
 
 const App = () => {
   const [timestamp, setTimestamp] = useState({convertStamp: '', diffStamp1: '', diffStamp2: '' })
@@ -30,6 +31,10 @@ const App = () => {
       setConverted(date.toLocaleString('en-US', options))
     }
   }, [timestamp.convertStamp, city])
+
+  useEffect(() => {
+    calculateDiff(timestamp.diffStamp1, timestamp.diffStamp2)
+  }, [timestamp.diffStamp1, timestamp.diffStamp2])
 
   return (
     <main>
