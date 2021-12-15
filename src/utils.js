@@ -12,7 +12,6 @@ export const calculateDiff = (timestamp1, timestamp2) => {
         seconds: Math.floor((millisecondsDiff / 1000) % 60),
         milliseconds: Math.floor(millisecondsDiff % 1000)
     }
-    console.log("milliseconds", millisecondsDiff, diff)
     return Object.keys(diff).reduce((acc, unit) => {
         if (diff[unit]) acc += `${diff[unit]} ${unit} `
         return acc
