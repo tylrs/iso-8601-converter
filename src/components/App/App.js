@@ -5,7 +5,7 @@ import { calculateDiff } from '../../utils';
 
 const App = () => {
   const [timestamp, setTimestamp] = useState({convertStamp: '', diffStamp1: '', diffStamp2: '' })
-  const [timestampDiff, setTimestampDiff] = useState('hmm')
+  const [timestampDiff, setTimestampDiff] = useState('')
   const [converted, setConverted] = useState('')
   const [city, setCity] = useState('America/Denver')
 
@@ -33,7 +33,7 @@ const App = () => {
   }, [timestamp.convertStamp, city])
 
   useEffect(() => {
-    calculateDiff(timestamp.diffStamp1, timestamp.diffStamp2)
+    setTimestampDiff(calculateDiff(timestamp.diffStamp1, timestamp.diffStamp2))
   }, [timestamp.diffStamp1, timestamp.diffStamp2])
 
   return (
