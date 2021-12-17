@@ -6,7 +6,7 @@ const TimeZoneForm = ({setCity, city}) => {
 
     return (
         <form className='timezone-form'>
-            <label for='changeTimezone'>Choose Destination Time Zone:</label>
+            <label htmlFor='changeTimezone'>Choose Destination Time Zone:</label>
             <select className='change-timezone' id='changeTimezone' value={city} onChange={(e) => setCity(e.target.value)}>
                 {convertedTimeZones}
             </select>
